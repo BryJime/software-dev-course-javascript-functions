@@ -37,6 +37,17 @@ reusable functions that solve specific tasks. This activity encourages:
 // 4. Return the result.
 
 
+// Our code
+
+function attendeBadge(name, role) {
+
+    console.log("Name: " + name + ", " + "Role: " + role)
+
+}
+attendeBadge("Alice", "Speaker");
+
+
+
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
 // ============================================
@@ -44,6 +55,27 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Takes number of attendees and cost per attendee.
 // - Applies a 10% discount if attendees exceed 100.
 // - Returns the total cost.
+
+
+// Our code 
+
+function eventCost(numberOfAttendees, costPerAttendees) {
+
+    if (numberOfAttendees > 100) {
+        costPerAttendees = numberOfAttendees * costPerAttendees;
+
+        cost = costPerAttendees * .10;
+
+        console.log(costPerAttendees - cost);
+    } else (numberOfAttendees < 100)
+
+    costPerAttendees = numberOfAttendees * costPerAttendees;
+
+    console.log(costPerAttendees);
+
+}
+
+eventCost(80, 50);
 
 // Steps:
 // 1. Multiply attendees by cost.
@@ -63,6 +95,32 @@ reusable functions that solve specific tasks. This activity encourages:
 // Steps:
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
+
+
+function checkAt(email) {
+
+    if (email.includes("@")) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+function checkPeriod(email) {
+
+    if (email.includes(".")) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
+function isValidEmail(email) {
+    return email.includes("@") && email.includes(".");
+}
+console.log(isValidEmail("random@gmail.com"));
 
 
 // ============================================
