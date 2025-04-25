@@ -59,13 +59,10 @@ console.log("The sum of 5 and 10 is " + sum);
 console.log(" ");
 
 function sumOfNum(num1, num2){
-
 let sum = num1 + num2;
-
-
 console.log("The sum of " + num1 + " and " + num2 + " is " + sum);
-
 }
+
 sumOfNum(30, 60);
 
 console.log(" ");
@@ -78,13 +75,10 @@ console.log("The product of 5 and 10 is " + product);
 console.log(" ");
 
 function productOfNum(num1, num2){
-
    let product = num1 * num2;
-   
-   
    console.log("The product of " + num1 + " and " + num2 + " is " + product);
-   
    }
+   
    productOfNum(5, 10);
    
    console.log(" ");
@@ -133,3 +127,33 @@ printNames(names);
 */
 
 // ✅ Your refactored code goes below this line!
+
+
+
+/* COMMENTS FOR Practice Solution: Functions and Scope - 1
+
+- For the first function, it looks pretty much the same except the solution uses 
+a more efficient method by calling the name by using ${ } instead of using + to add 
+strings and the variable. Using ${ } is much more efficient in terms of readability 
+and convenience. 
+
+- The second function solution is much simpler and cleaner compared to mine. 
+I declared a variable that sums the two numbers and used console.log within the function. 
+Mine works but adds more things that don't really need to be in there to get the job 
+done. 
+
+- Same goes for the third function solution as the second function. 
+The solution provides a much cleaner approach to the function. 
+
+- The last function solution is pretty much the same as my original. 
+Only thing that's different the parameter name. 
+
+- Overall I the solution code provides a way for me to perhaps consider ways to make 
+my code cleaner and simpler to complete the same thing but making it more efficient. 
+
+
+*/
+
+
+
+
